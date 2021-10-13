@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 import streamlit as st
 st.title('Predicting Fraud in Financial Payment Services')
 
-df=st.cache(pd.read_csv)('https://github.com/Harini456/Financial_Fruad_Detection/blob/main/FinancialFraud_SampleData.xlsx')
+df=st.cache(pd.read_csv)('FinancialFraud_SampleData.xlsx')
 df = df.sample(frac=0.1, random_state = 48)
 
 # Print shape and description of the data
